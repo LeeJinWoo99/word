@@ -1,6 +1,12 @@
-<h1> 안녕하세요. 글을 작성해주세요. </h1>
+<html>
+<head>
+    <title>wordcount</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background-color: cornflowerblue;">
+<h1 style="color:chocolate; background-color:darkblue; align-content: center"> 안녕하세요. 글을 작성해주세요. </h1>
 <!-- 'about' 설명페이지로 넘어가기 -->
-<a href="{%url 'about'%}">about</a>
+<a href="{%url 'about'%}" style="align-self: center;">about</a>
 
 <!-- 글 작성할 폼 만들기 -->
 <form action="{%url 'result'%}">
@@ -8,3 +14,5 @@
     <!-- 글 작성한 것 결과페이지로 넘기기 -->
     <input type="submit" value="글자수세기">
 </form>
+</body>
+</html>

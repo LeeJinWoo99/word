@@ -15,4 +15,4 @@ def result(request):
             word_count[word]+=1
         else:
             word_count[word]=1
-    return render(request, 'result.html', {'full' : text, 'total' : len(words), 'count' : word_count.items})
+    return render(request, 'result.html', {'full' : text, 'total' : len(words), 'count' : word_count.itemscd })
